@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-mT-dcd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.20392156862745098" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TqN-YG-gdc">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Launch Icon" translatesAutoresizingMaskIntoConstraints="NO" id="h74-VW-r8u">
+                                <rect key="frame" x="240" y="258" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="GNJ-g7-9zQ"/>
+                                    <constraint firstAttribute="width" constant="120" id="MBu-ze-4Wh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TqN-YG-gdc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="7WG-Fg-vKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RhP-mT-dcd" secondAttribute="trailing" constant="-20" id="9sp-YG-Yfz"/>
+                            <constraint firstItem="RhP-mT-dcd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Cwv-P0-mnq"/>
+                            <constraint firstItem="h74-VW-r8u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IU0-yn-eGk"/>
+                            <constraint firstItem="TqN-YG-gdc" firstAttribute="top" secondItem="RhP-mT-dcd" secondAttribute="bottom" id="JOa-mG-sci"/>
+                            <constraint firstItem="RhP-mT-dcd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="ZPv-ei-WDU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TqN-YG-gdc" secondAttribute="trailing" constant="-20" id="gN8-8n-qmO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="TqN-YG-gdc" secondAttribute="bottom" id="l86-9M-ggB"/>
+                            <constraint firstItem="h74-VW-r8u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nNq-NK-eoG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch Icon" width="120" height="120"/>
+    </resources>
+</document>
